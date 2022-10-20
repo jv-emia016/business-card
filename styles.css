@@ -1,0 +1,85 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border: double 10px #fdf0d5;
+    border-radius: 0 15px;
+    
+}
+
+.card {
+    width: 200px;
+    height: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+    background: #335c67;
+    border: 15px groove #fdf0d5;
+    border-radius: 5px 5px; 
+    color: #fdf0d5;
+    text-shadow: 0 0 10px #fdf0d5;
+    
+ 
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+/* .border {
+    border: 1px double blue;
+} */
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+h3, p, h4 {
+    
+    margin: 15px auto;
+    padding: 7px;
+    box-shadow: inset 0 0 0 0 #fdf0d5;
+    color: #fdf0d5;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+    
+}
+
+h3:hover, p:hover, h4:hover {
+    box-shadow: inset 200px 0 0 0 #333533;
+    color: white;
+
+}
+
+.tilt-n-move-shaking:hover {
+    animation: tilt-n-move-shaking 0.38s infinite;
+    
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
